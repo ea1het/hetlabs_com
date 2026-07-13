@@ -24,22 +24,36 @@
   <!-- hub -->
   <circle cx="310" cy="310" r="9" fill="#1A5C3A"/>
 
-  <!-- Node: Enterprise Architecture -->
-  <circle cx="150" cy="150" r="64" fill="#1A5C3A"/>
+  <!-- satellites: Cybersecurity capabilities (Transformation, Data Masking, OSINT) -->
+  <circle cx="68" cy="103" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+  <circle cx="55" cy="150" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+  <circle cx="68" cy="197" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+
+  <!-- Node 01: Cybersecurity -->
+  <rect x="86" y="86" width="128" height="128" rx="28" fill="#1A5C3A"/>
+  <path d="M150 118 L177 129 V152 C177 171 165 186 150 192 C135 186 123 171 123 152 V129 Z" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M138 153 L147 162 L164 142" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="240" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
+
+  <!-- satellites: Architecture capabilities (Software Factory, Advisory, Idea to Product) -->
+  <circle cx="68" cy="423" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+  <circle cx="55" cy="470" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+  <circle cx="68" cy="517" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+
+  <!-- Node 02: Enterprise Architecture -->
+  <rect x="86" y="406" width="128" height="128" rx="28" fill="#1A5C3A"/>
   <g stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M132 132 L114 150 L132 168"/>
-    <path d="M168 132 L186 150 L168 168"/>
+    <path d="M132 452 L114 470 L132 488"/>
+    <path d="M168 452 L186 470 L168 488"/>
   </g>
-  <text x="150" y="240" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
+  <text x="150" y="560" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
 
-  <!-- Node: Cybersecurity -->
-  <circle cx="150" cy="470" r="64" fill="#1A5C3A"/>
-  <path d="M150 438 L177 449 V472 C177 491 165 506 150 512 C135 506 123 491 123 472 V449 Z" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M138 473 L147 482 L164 462" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="150" y="560" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
+  <!-- satellites: Signals capabilities (Secure Comms, ELINT) -->
+  <circle cx="575" cy="255" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+  <circle cx="575" cy="365" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
 
-  <!-- Node: Signals -->
-  <circle cx="480" cy="310" r="72" fill="#1A5C3A"/>
+  <!-- Node 03: Signals -->
+  <rect x="408" y="238" width="144" height="144" rx="32" fill="#1A5C3A"/>
   <path d="M452 332 C452 308 508 308 508 332" stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round"/>
   <path d="M462 323 C462 308 498 308 498 323" stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
   <circle cx="480" cy="338" r="6" fill="#F4F9F0"/>

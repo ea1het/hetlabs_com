@@ -1,61 +1,61 @@
-<svg viewBox="0 0 660 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-  <!-- backdrop panel -->
-  <rect x="8" y="14" width="644" height="592" rx="36" fill="#E8F3E0" opacity="0.55" stroke="#A8C898" stroke-width="1.5"/>
-
-  <!-- radiating signal arcs -->
-  <g stroke="#2A7A52" fill="none" stroke-width="2" opacity="0.3">
-    <circle cx="480" cy="310" r="90" stroke-dasharray="2 10"/>
-    <circle cx="480" cy="310" r="130" stroke-dasharray="2 12"/>
-    <circle cx="480" cy="310" r="170" stroke-dasharray="2 14"/>
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <!-- radar rings -->
+  <g stroke="#A8C898" fill="none" opacity="0.4">
+    <circle cx="300" cy="320" r="130" stroke-width="1" stroke-dasharray="1 8"/>
+    <circle cx="300" cy="320" r="170" stroke-width="1" stroke-dasharray="1 9"/>
+    <circle cx="300" cy="320" r="210" stroke-width="1" stroke-dasharray="1 10"/>
+    <circle cx="300" cy="320" r="250" stroke-width="1" stroke-dasharray="1 11"/>
   </g>
 
-  <!-- connecting lines -->
-  <g stroke="#A8C898" stroke-width="2.5">
-    <line x1="150" y1="150" x2="310" y2="310"/>
-    <line x1="150" y1="470" x2="310" y2="310"/>
-    <line x1="480" y1="310" x2="310" y2="310"/>
+  <!-- faint decorative texture -->
+  <g stroke="#A8C898" fill="none" opacity="0.45">
+    <rect x="52" y="66" width="10" height="10" stroke-width="1.2"/>
+    <rect x="534" y="118" width="8" height="8" stroke-width="1.2"/>
+    <circle cx="546" cy="500" r="3" fill="#A8C898" stroke="none"/>
+    <circle cx="56" cy="470" r="3" fill="#A8C898" stroke="none"/>
   </g>
+  <path d="M40 575 Q90 560 140 575 T240 575 T340 575 T440 575 T540 575" stroke="#2A7A52" fill="none" stroke-width="1.5" opacity="0.18"/>
 
-  <!-- pulse dots -->
-  <circle cx="230" cy="230" r="5" fill="#b86500"/>
-  <circle cx="230" cy="390" r="5" fill="#b86500"/>
-  <circle cx="395" cy="310" r="5" fill="#b86500"/>
+  <!-- connecting lines (drawn under the cards/hub) -->
+  <g stroke="#A8C898" stroke-width="1.5">
+    <line x1="300" y1="105" x2="300" y2="320"/>
+    <line x1="125" y1="495" x2="300" y2="320"/>
+    <line x1="475" y1="495" x2="300" y2="320"/>
+  </g>
+  <circle cx="300" cy="212" r="3.5" fill="#b86500"/>
+  <circle cx="212" cy="408" r="3.5" fill="#b86500"/>
+  <circle cx="388" cy="408" r="3.5" fill="#b86500"/>
 
   <!-- hub -->
-  <circle cx="310" cy="310" r="9" fill="#1A5C3A"/>
+  <circle cx="300" cy="320" r="90" fill="#1A5C3A" stroke="#E8F3E0" stroke-width="4"/>
+  <circle cx="300" cy="230" r="3" fill="#F4F9F0"/>
+  <circle cx="300" cy="410" r="3" fill="#F4F9F0"/>
+  <text x="300" y="310" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">SYSTEMS THAT</text>
+  <text x="300" y="326" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">PERFORM IN THE</text>
+  <text x="300" y="342" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">REAL WORLD</text>
 
-  <!-- satellites: Cybersecurity capabilities (Transformation, Data Masking, OSINT) -->
-  <circle cx="68" cy="103" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-  <circle cx="55" cy="150" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-  <circle cx="68" cy="197" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
+  <!-- Card: Architecture (top) -->
+  <rect x="195" y="40" width="210" height="130" rx="22" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
+  <circle cx="300" cy="95" r="34" fill="#1A5C3A"/>
+  <rect x="290" y="86" width="20" height="5" rx="2" fill="#F4F9F0"/>
+  <rect x="287" y="94" width="26" height="5" rx="2" fill="#F4F9F0"/>
+  <rect x="284" y="102" width="32" height="5" rx="2" fill="#F4F9F0"/>
+  <text x="300" y="150" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
+  <line x1="290" y1="158" x2="310" y2="158" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Node 01: Cybersecurity -->
-  <rect x="86" y="86" width="128" height="128" rx="28" fill="#1A5C3A"/>
-  <path d="M150 118 L177 129 V152 C177 171 165 186 150 192 C135 186 123 171 123 152 V129 Z" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M138 153 L147 162 L164 142" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="150" y="240" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
+  <!-- Card: Cybersecurity (bottom left) -->
+  <rect x="20" y="430" width="210" height="130" rx="22" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
+  <circle cx="125" cy="485" r="34" fill="#1A5C3A"/>
+  <path d="M125 467 L140 476 V487 C140 497 133 505 125 508 C117 505 110 497 110 487 V476 Z" fill="none" stroke="#F4F9F0" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M118 489 L123 494 L133 483" fill="none" stroke="#F4F9F0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="125" y="540" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
+  <line x1="115" y1="548" x2="135" y2="548" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- satellites: Architecture capabilities (Software Factory, Advisory, Idea to Product) -->
-  <circle cx="68" cy="423" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-  <circle cx="55" cy="470" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-  <circle cx="68" cy="517" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-
-  <!-- Node 02: Enterprise Architecture -->
-  <rect x="86" y="406" width="128" height="128" rx="28" fill="#1A5C3A"/>
-  <g stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M132 452 L114 470 L132 488"/>
-    <path d="M168 452 L186 470 L168 488"/>
-  </g>
-  <text x="150" y="560" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
-
-  <!-- satellites: Signals capabilities (Secure Comms, ELINT) -->
-  <circle cx="575" cy="255" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-  <circle cx="575" cy="365" r="5" fill="#F4F9F0" stroke="#2A7A52" stroke-width="2"/>
-
-  <!-- Node 03: Signals -->
-  <rect x="408" y="238" width="144" height="144" rx="32" fill="#1A5C3A"/>
-  <path d="M452 332 C452 308 508 308 508 332" stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M462 323 C462 308 498 308 498 323" stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
-  <circle cx="480" cy="338" r="6" fill="#F4F9F0"/>
-  <text x="480" y="408" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#1A5C3A" letter-spacing="1">SIGNALS</text>
+  <!-- Card: Signals (bottom right) -->
+  <rect x="370" y="430" width="210" height="130" rx="22" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
+  <circle cx="475" cy="485" r="34" fill="#1A5C3A"/>
+  <path d="M455 485 C465 473 485 497 495 485" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="495" cy="485" r="3.5" fill="#b86500"/>
+  <text x="475" y="540" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">SIGNALS</text>
+  <line x1="465" y1="548" x2="485" y2="548" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

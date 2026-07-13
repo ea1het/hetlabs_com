@@ -445,4 +445,3 @@ section.alt .card { background: var(--bg); }
   color: var(--muted);
   opacity: 0.75;
 }
-.build-commit:hover { color: var(--green-light); opacity: 1; }

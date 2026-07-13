@@ -49,7 +49,6 @@
         .then(function (data) {
           if (!data || !data.sha) return;
           commitEl.textContent = '(' + data.sha.slice(0, 7) + ')';
-          commitEl.href = 'https://github.com/ea1het/hetlabs_com/commit/' + data.sha;
         })
         .catch(function () {});
     }

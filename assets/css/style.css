@@ -14,7 +14,6 @@
   --muted:      #4A6A54;
   --font:       'Inter', 'Helvetica Neue', system-ui, sans-serif;
   --font-mono:  'JetBrains Mono', 'Fira Mono', monospace;
-  --font-serif: 'Lora', 'Georgia', serif;
   --radius:     0.5rem;
   --radius-lg:  0.9rem;
 }
@@ -231,12 +230,12 @@ section#hero {
 .hero-visual img { width: 100%; height: auto; }
 
 .hero-title {
-  font-family: var(--font-serif);
-  font-size: clamp(2.6rem, 5.5vw, 3.6rem);
-  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: clamp(2.2rem, 4.6vw, 3.1rem);
+  font-weight: 700;
   color: var(--green);
   letter-spacing: -0.01em;
-  line-height: 1.15;
+  line-height: 1.2;
   margin-bottom: 1.1rem;
 }
 .hero-title .accent-dot { color: var(--amber); }
@@ -292,7 +291,6 @@ section#hero {
   color: var(--green);
   flex-shrink: 0;
 }
-.pillar-chip:nth-child(2) .chip-icon { color: var(--amber); }
 
 .hero-trust {
   display: flex;
@@ -382,8 +380,12 @@ section.alt .card { background: var(--bg); }
   box-shadow: 0 10px 28px rgba(26,92,58,0.10);
 }
 .card-icon {
-  font-size: 1.6rem;
   margin-bottom: 0.9rem;
+}
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--green);
 }
 .card h3 {
   font-size: 1.05rem;

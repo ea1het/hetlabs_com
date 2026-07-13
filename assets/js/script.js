@@ -41,5 +41,17 @@
         });
       });
     }
+
+    var commitEl = document.getElementById('buildCommit');
+    if (commitEl) {
+      fetch('https://api.github.com/repos/ea1het/hetlabs_com/commits/gh-pages')
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (data) {
+          if (!data || !data.sha) return;
+          commitEl.textContent = '(' + data.sha.slice(0, 7) + ')';
+          commitEl.href = 'https://github.com/ea1het/hetlabs_com/commit/' + data.sha;
+        })
+        .catch(function () {});
+    }
   });
 })();

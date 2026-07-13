@@ -398,7 +398,6 @@ section.alt .card { background: var(--bg); }
 }
 
 /* ── ABOUT ────────────────────────────────────────────────── */
-.about-inner { max-width: 46rem; }
 .about-text p { color: var(--muted); margin-bottom: 1.5rem; }
 .about-links {
   display: flex;
@@ -425,7 +424,6 @@ section.alt .card { background: var(--bg); }
 .mono { font-family: var(--font-mono); }
 
 /* ── CONTACT ──────────────────────────────────────────────── */
-.contact-inner { max-width: 40rem; }
 .contact-copy { color: var(--muted); margin-bottom: 2rem; font-size: 1.05rem; }
 
 /* ── FOOTER ───────────────────────────────────────────────── */
@@ -442,3 +440,9 @@ section.alt .card { background: var(--bg); }
   font-size: 0.85rem;
   color: var(--muted);
 }
+.build-commit {
+  font-size: 0.78rem;
+  color: var(--muted);
+  opacity: 0.75;
+}
+.build-commit:hover { color: var(--green-light); opacity: 1; }

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 660 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <!-- backdrop panel -->
+  <rect x="8" y="14" width="644" height="592" rx="36" fill="#E8F3E0" opacity="0.55" stroke="#A8C898" stroke-width="1.5"/>
+
+  <!-- radiating signal arcs -->
+  <g stroke="#2A7A52" fill="none" stroke-width="2" opacity="0.3">
+    <circle cx="480" cy="310" r="90" stroke-dasharray="2 10"/>
+    <circle cx="480" cy="310" r="130" stroke-dasharray="2 12"/>
+    <circle cx="480" cy="310" r="170" stroke-dasharray="2 14"/>
+  </g>
+
+  <!-- connecting lines -->
+  <g stroke="#A8C898" stroke-width="2.5">
+    <line x1="150" y1="150" x2="310" y2="310"/>
+    <line x1="150" y1="470" x2="310" y2="310"/>
+    <line x1="480" y1="310" x2="310" y2="310"/>
+  </g>
+
+  <!-- pulse dots -->
+  <circle cx="230" cy="230" r="5" fill="#b86500"/>
+  <circle cx="230" cy="390" r="5" fill="#b86500"/>
+  <circle cx="395" cy="310" r="5" fill="#b86500"/>
+
+  <!-- hub -->
+  <circle cx="310" cy="310" r="9" fill="#1A5C3A"/>
+
+  <!-- Node: Enterprise Architecture -->
+  <circle cx="150" cy="150" r="64" fill="#1A5C3A"/>
+  <g stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 132 L114 150 L132 168"/>
+    <path d="M168 132 L186 150 L168 168"/>
+  </g>
+  <text x="150" y="240" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
+
+  <!-- Node: Cybersecurity -->
+  <circle cx="150" cy="470" r="64" fill="#1A5C3A"/>
+  <path d="M150 438 L177 449 V472 C177 491 165 506 150 512 C135 506 123 491 123 472 V449 Z" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M138 473 L147 482 L164 462" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="560" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
+
+  <!-- Node: Signals -->
+  <circle cx="480" cy="310" r="72" fill="#1A5C3A"/>
+  <path d="M452 332 C452 308 508 308 508 332" stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M462 323 C462 308 498 308 498 323" stroke="#F4F9F0" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="480" cy="338" r="6" fill="#F4F9F0"/>
+  <text x="480" y="408" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#1A5C3A" letter-spacing="1">SIGNALS</text>
+</svg>

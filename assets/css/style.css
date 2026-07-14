@@ -203,6 +203,7 @@ html[lang="es"] .lang-btn[data-set-lang="es"] {
 /* ── HERO ─────────────────────────────────────────────────── */
 section#hero {
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   min-height: min(52rem, 100svh);
   padding: 8rem 0 4.5rem;
@@ -214,8 +215,8 @@ section#hero {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 50% 0%, var(--green-glow), transparent 70%),
-    var(--bg);
+    linear-gradient(rgba(244,249,240,0.58), rgba(244,249,240,0.72)),
+    url('/assets/images/hero-signal-background.png') center / cover no-repeat;
   z-index: -1;
   overflow: hidden;
 }

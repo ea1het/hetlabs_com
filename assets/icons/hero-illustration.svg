@@ -1,61 +1,101 @@
 <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="tier1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5AAE81"/>
+      <stop offset="1" stop-color="#2E8259"/>
+    </linearGradient>
+    <linearGradient id="tier2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E8259"/>
+      <stop offset="1" stop-color="#1F6B44"/>
+    </linearGradient>
+    <linearGradient id="tier3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A5C3A"/>
+      <stop offset="1" stop-color="#123F28"/>
+    </linearGradient>
+    <radialGradient id="apexGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F5B454" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#b86500" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#b86500" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1A5C3A" flood-opacity="0.14"/>
+    </filter>
+    <filter id="pyramidShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#123F28" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
   <!-- radar rings -->
-  <g stroke="#A8C898" fill="none" opacity="0.4">
-    <circle cx="300" cy="320" r="130" stroke-width="1" stroke-dasharray="1 8"/>
-    <circle cx="300" cy="320" r="170" stroke-width="1" stroke-dasharray="1 9"/>
-    <circle cx="300" cy="320" r="210" stroke-width="1" stroke-dasharray="1 10"/>
-    <circle cx="300" cy="320" r="250" stroke-width="1" stroke-dasharray="1 11"/>
+  <g stroke="#A8C898" fill="none" opacity="0.5">
+    <circle cx="300" cy="310" r="150" stroke-width="1.2" stroke-dasharray="1 9"/>
+    <circle cx="300" cy="310" r="195" stroke-width="1.2" stroke-dasharray="1 10"/>
+    <circle cx="300" cy="310" r="240" stroke-width="1.2" stroke-dasharray="1 11"/>
+    <circle cx="300" cy="310" r="285" stroke-width="1.2" stroke-dasharray="1 12"/>
   </g>
 
   <!-- faint decorative texture -->
-  <g stroke="#A8C898" fill="none" opacity="0.45">
-    <rect x="52" y="66" width="10" height="10" stroke-width="1.2"/>
-    <rect x="534" y="118" width="8" height="8" stroke-width="1.2"/>
-    <circle cx="546" cy="500" r="3" fill="#A8C898" stroke="none"/>
-    <circle cx="56" cy="470" r="3" fill="#A8C898" stroke="none"/>
+  <g stroke="#A8C898" fill="none" opacity="0.5">
+    <rect x="46" y="58" width="11" height="11" stroke-width="1.4"/>
+    <rect x="538" y="112" width="9" height="9" stroke-width="1.4"/>
+    <circle cx="550" cy="500" r="3.5" fill="#A8C898" stroke="none"/>
+    <circle cx="50" cy="462" r="3.5" fill="#A8C898" stroke="none"/>
   </g>
-  <path d="M40 575 Q90 560 140 575 T240 575 T340 575 T440 575 T540 575" stroke="#2A7A52" fill="none" stroke-width="1.5" opacity="0.18"/>
+  <path d="M30 578 Q85 561 140 578 T250 578 T360 578 T470 578 T580 578" stroke="#2A7A52" fill="none" stroke-width="1.5" opacity="0.2"/>
 
-  <!-- connecting lines (drawn under the cards/hub) -->
+  <!-- apex glow -->
+  <circle cx="300" cy="160" r="110" fill="url(#apexGlow)"/>
+
+  <!-- connecting lines -->
   <g stroke="#A8C898" stroke-width="1.5">
-    <line x1="300" y1="105" x2="300" y2="320"/>
-    <line x1="125" y1="495" x2="300" y2="320"/>
-    <line x1="475" y1="495" x2="300" y2="320"/>
+    <line x1="300" y1="137" x2="300" y2="180"/>
+    <line x1="140" y1="480" x2="146" y2="458"/>
+    <line x1="460" y1="480" x2="454" y2="458"/>
   </g>
-  <circle cx="300" cy="212" r="3.5" fill="#b86500"/>
-  <circle cx="212" cy="408" r="3.5" fill="#b86500"/>
-  <circle cx="388" cy="408" r="3.5" fill="#b86500"/>
+  <circle cx="300" cy="150" r="3.5" fill="#b86500"/>
+  <circle cx="141" cy="470" r="3.5" fill="#b86500"/>
+  <circle cx="459" cy="470" r="3.5" fill="#b86500"/>
 
-  <!-- hub -->
-  <circle cx="300" cy="320" r="90" fill="#1A5C3A" stroke="#E8F3E0" stroke-width="4"/>
-  <circle cx="300" cy="230" r="3" fill="#F4F9F0"/>
-  <circle cx="300" cy="410" r="3" fill="#F4F9F0"/>
-  <text x="300" y="310" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">SYSTEMS THAT</text>
-  <text x="300" y="326" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">PERFORM IN THE</text>
-  <text x="300" y="342" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">REAL WORLD</text>
+  <!-- pyramid: tiers building up to the apex -->
+  <g filter="url(#pyramidShadow)">
+    <path d="M300,160 L351.7,260 L248.3,260 Z" fill="url(#tier1)"/>
+    <path d="M248.3,260 L351.7,260 L403.4,360 L196.6,360 Z" fill="url(#tier2)"/>
+    <path d="M196.6,360 L403.4,360 L455,460 L145,460 Z" fill="url(#tier3)"/>
+    <path d="M300,160 L455,460 L145,460 Z" fill="none" stroke="#E8F3E0" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="248.3" y1="260" x2="351.7" y2="260" stroke="#F4F9F0" stroke-width="3"/>
+    <line x1="196.6" y1="360" x2="403.4" y2="360" stroke="#F4F9F0" stroke-width="3"/>
+  </g>
+  <text x="300" y="400" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">SYSTEMS THAT</text>
+  <text x="300" y="417" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">PERFORM IN THE</text>
+  <text x="300" y="434" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#F4F9F0" letter-spacing="0.5">REAL WORLD</text>
 
   <!-- Card: Architecture (top) -->
-  <rect x="195" y="40" width="210" height="130" rx="22" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
-  <circle cx="300" cy="95" r="34" fill="#1A5C3A"/>
-  <rect x="290" y="86" width="20" height="5" rx="2" fill="#F4F9F0"/>
-  <rect x="287" y="94" width="26" height="5" rx="2" fill="#F4F9F0"/>
-  <rect x="284" y="102" width="32" height="5" rx="2" fill="#F4F9F0"/>
-  <text x="300" y="150" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
-  <line x1="290" y1="158" x2="310" y2="158" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
+  <g filter="url(#cardShadow)">
+    <rect x="172" y="10" width="256" height="128" rx="24" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
+  </g>
+  <circle cx="300" cy="66" r="35" fill="#1A5C3A"/>
+  <rect x="289" y="57" width="22" height="5.5" rx="2.2" fill="#F4F9F0"/>
+  <rect x="286" y="65.5" width="28" height="5.5" rx="2.2" fill="#F4F9F0"/>
+  <rect x="283" y="74" width="34" height="5.5" rx="2.2" fill="#F4F9F0"/>
+  <text x="300" y="118" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">ARCHITECTURE</text>
+  <line x1="289" y1="127" x2="311" y2="127" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- Card: Cybersecurity (bottom left) -->
-  <rect x="20" y="430" width="210" height="130" rx="22" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
-  <circle cx="125" cy="485" r="34" fill="#1A5C3A"/>
-  <path d="M125 467 L140 476 V487 C140 497 133 505 125 508 C117 505 110 497 110 487 V476 Z" fill="none" stroke="#F4F9F0" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M118 489 L123 494 L133 483" fill="none" stroke="#F4F9F0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="125" y="540" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
-  <line x1="115" y1="548" x2="135" y2="548" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
+  <g filter="url(#cardShadow)">
+    <rect x="6" y="480" width="256" height="115" rx="24" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
+  </g>
+  <circle cx="134" cy="531" r="32" fill="#1A5C3A"/>
+  <path d="M134 515 L148 523 V533 C148 542 141.5 549.5 134 552.5 C126.5 549.5 120 542 120 533 V523 Z" fill="none" stroke="#F4F9F0" stroke-width="3.4" stroke-linejoin="round"/>
+  <path d="M127.5 534 L132 538.5 L141 528.5" fill="none" stroke="#F4F9F0" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="134" y="578" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">CYBERSECURITY</text>
+  <line x1="123" y1="586" x2="145" y2="586" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- Card: Signals (bottom right) -->
-  <rect x="370" y="430" width="210" height="130" rx="22" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
-  <circle cx="475" cy="485" r="34" fill="#1A5C3A"/>
-  <path d="M455 485 C465 473 485 497 495 485" fill="none" stroke="#F4F9F0" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="495" cy="485" r="3.5" fill="#b86500"/>
-  <text x="475" y="540" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">SIGNALS</text>
-  <line x1="465" y1="548" x2="485" y2="548" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
+  <g filter="url(#cardShadow)">
+    <rect x="338" y="480" width="256" height="115" rx="24" fill="#F4F9F0" stroke="#A8C898" stroke-width="1.5"/>
+  </g>
+  <circle cx="466" cy="531" r="32" fill="#1A5C3A"/>
+  <path d="M448 531 C457 519.5 475 542.5 484 531" fill="none" stroke="#F4F9F0" stroke-width="3.8" stroke-linecap="round"/>
+  <circle cx="484" cy="531" r="3.4" fill="#b86500"/>
+  <text x="466" y="578" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#1A5C3A" letter-spacing="0.5">SIGNALS</text>
+  <line x1="455" y1="586" x2="477" y2="586" stroke="#b86500" stroke-width="2.5" stroke-linecap="round"/>
 </svg>
